@@ -1,23 +1,19 @@
-import java.util.*;
+package mypropose1;
 
-public class Main {
-    public static void main(String[] args) {
-      
-   
-     Scanner sc=new Scanner(System.in);
-     int x=sc.nextInt();
-     int n=0;
-     int count =0;
-     while(count<x-1)
-     {
-        if(n%2!=0)
-        {
-          System.out.print(n+",");
-          count++;
-        }
-        n++;
-     }
-     System.out.print(n+1);
-    
-  }
+import java.util.Scanner;
+class Cal{
+	public static void main(String[]  args) {
+		
+		Scanner sc=new Scanner(System.in);
+		int input=sc.nextInt();
+		int count=1;
+		int i;
+		
+		
+		for (i=1;count<input;i+=2){
+			System.out.print(i+",");
+		  count++;
+		}
+		System.out.print(i);
+	}
 }
